@@ -1,0 +1,117 @@
+.app__specialMenu {
+    flex-direction: column;
+    background: var(--color-black);
+}
+
+.app__specialMenu-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.app__specialMenu-menu {
+    width: 100%;
+    margin: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.app__specialMenu-menu_heading {
+    font-family: var(--font-base);
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 58.5px;
+    letter-spacing: 0.04em;
+    color: var(--color-white);
+   
+    text-align: center;
+}
+
+.app__specialMenu-menu_wine,
+.app__specialMenu-menu_cocktails {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__specialMenu-menu_img {
+    width: 410px;
+    margin: 0 2rem;
+}
+
+.app__specialMenu-menu_img img {
+    width: 100%;
+    height: auto;
+}
+
+.app__specialMenu_menu_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 2rem 0;
+    width: 100%;
+}
+
+@media screen and (min-width: 2000px) {
+    .app__specialMenu-menu_img {
+        width: 650px;
+    }
+
+    .app__specialMenu-menu_img img {
+        height: 920px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__specialMenu-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_img {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__specialMenu-menu_img {
+        width: 100%;
+    }
+
+    .app__specialMenu-menu_heading {
+        font-size: 35px;
+        line-height: 48.5px;
+    }
+}
+.cardM {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 30%; /* Maintain the width */
+    height: 250px; /* Reduce overall card height */
+    overflow: visible; /* Allow shadows to appear outside */
+    position: relative; /* Ensure proper positioning */
+}
+
+.cardM:hover {
+    box-shadow: 0 8px 16px 0 rgba(189, 140, 140, 0.5); /* Increase shadow for hover effect */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+.cardM img {
+    height: 65%; /* Reduce image height to fit new card size */
+    object-fit: cover; /* Ensures the image is cropped nicely */
+}
+
+.containerM {
+    padding: 8px 10px; /* Adjust padding to fit smaller card size */
+    height: 50%; /* Adjust container height to balance card proportions */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
